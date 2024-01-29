@@ -29,6 +29,16 @@ const userSchema = new Schema({
         index: true
          
     },
+    locality: {
+        type: String,
+        required: [true,'locality is required']
+
+    },
+    city: {
+        type: String,
+        required: [true,'city is required']
+
+    },
     password: {
         type: String,
         required: [true,'password is required']
